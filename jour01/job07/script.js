@@ -1,3 +1,4 @@
+//fonction qui verifie si le jour est travaillé ou férié
 function jourtravaille(date) {
   const joursFeries2020 = [
     "2020-01-01",
