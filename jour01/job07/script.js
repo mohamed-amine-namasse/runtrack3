@@ -12,18 +12,35 @@ function jourtravaille(date) {
     "2020-11-11",
     "2020-12-25",
   ];
-
+  const joursSemaine = [
+    "dimanche",
+    "lundi",
+    "mardi",
+    "mercredi",
+    "jeudi",
+    "vendredi",
+    "samedi",
+  ];
+  const moisAnnee = [
+    "janvier",
+    "février",
+    "mars",
+    "avril",
+    "mai",
+    "juin",
+    "juillet",
+    "août",
+    "septembre",
+    "octobre",
+    "novembre",
+    "décembre",
+  ];
   const annee = date.getFullYear();
-  const mois = date.getMonth() + 1; // Mois de 1 à 12
   const jour = date.getDate();
-
+  const jourSemaine = joursSemaine[date.getDay()];
+  const mois = moisAnnee[date.getMonth()];
   // Format YYYY-MM-DD pour comparer
   const dateISO = date.toISOString().split("T")[0];
-
-  if (annee !== 2020) {
-    console.log("Cette fonction ne gère que l'année 2020.");
-    return;
-  }
 
   // Vérifie si c'est un jour férié
   if (joursFeries2020.includes(dateISO)) {
@@ -31,14 +48,15 @@ function jourtravaille(date) {
   }
   // Vérifie si samedi (6) ou dimanche (0)
   else if (date.getDay() === 0 || date.getDay() === 6) {
-    console.log(`Non, ${jour} ${mois} ${annee} est un week-end`);
+    console.log(`Non,${jourSemaine} ${jour} ${mois} ${annee} est un week-end`);
   } else {
-    console.log(`Oui, ${jour} ${mois} ${annee} est un jour travaillé`);
+    console.log(
+      `Oui,${jourSemaine} ${jour} ${mois} ${annee} est un jour travaillé`
+    );
   }
 }
 
 // Exemple d'utilisation
 jourtravaille(new Date("2020-01-01")); // Jour férié
-jourtravaille(new Date("2020-07-18")); // Samedi
 jourtravaille(new Date("2020-07-20")); // Jour travaillé
-jourtravaille(new Date("2019-01-01")); // Année non gérée
+jourtravaille(new Date("2020-07-18")); // Samedi
