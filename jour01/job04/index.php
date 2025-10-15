@@ -8,6 +8,7 @@
     
 </head>
 <body>
-    
+    <h1>Vérfication si l'année est bisextile</h1>
+    <p>Ouvrez la console pour voir les jours s'afficher un par un.</p>
 </body>
 </html>

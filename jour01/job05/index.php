@@ -8,6 +8,7 @@
     
 </head>
 <body>
-    <p>Ouvrez la console pour voir le message du popup ("Hello Javascript!").</p>
+    <h1>Jours de la semaine</h1>
+    <p>Ouvrez la console pour voir les jours s'afficher un par un.</p>
 </body>
 </html>
