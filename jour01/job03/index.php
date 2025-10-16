@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js" ></script>
-    
+    <script src="./script.js"></script>
+
 </head>
+
 <body>
     <p>Ouvrez la console pour voir le message du popup ("Hello Javascript!").</p>
 </body>
+
 </html>
