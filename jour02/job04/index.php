@@ -11,7 +11,7 @@
 
 <body>
 
-  <textarea id="keylogger" rows="10" cols="50" placeholder="Tapez n'importe où sur la page..."></textarea>
+  <textarea id="keylogger" rows="10" cols="50" placeholder="Tapez votre texte ici"></textarea>
 
   <p>Le focus est actuellement sur un autre élément pour tester la condition :</p>
   <input type="text" placeholder="Un autre champ de saisie">
