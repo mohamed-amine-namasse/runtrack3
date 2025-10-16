@@ -7,7 +7,7 @@ function addone() {
   let valeurActuelle = compteurElement.textContent;
 
   // 3. Convertir la valeur en nombre, l'incrémenter
-  let nouvelleValeur = parseInt(valeurActuelle, 10) + 1;
+  let nouvelleValeur = parseInt(valeurActuelle) + 1;
 
   // 4. Mettre à jour le contenu de l'élément <p>
   compteurElement.textContent = nouvelleValeur;
