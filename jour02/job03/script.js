@@ -1,4 +1,3 @@
-// Fonction pour incrémenter le compteur
 function addone() {
   // 1. Récupérer l'élément du compteur
   const compteurElement = document.getElementById("compteur");
