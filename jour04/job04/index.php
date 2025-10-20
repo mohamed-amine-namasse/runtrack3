@@ -16,7 +16,7 @@
 
     <h1>Liste des Utilisateurs</h1>
 
-    <button id="updateButton" onclick=citation()><b>Mettre à jour les données</b></button>
+    <button id="updateButton"><b>Mettre à jour les données</b></button>
 
     <table id=" usersTable">
         <thead>
