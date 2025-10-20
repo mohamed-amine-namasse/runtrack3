@@ -14,7 +14,7 @@
 <body>
 
     <button id="button">Afficher l'Expression</button>
-    <div id="result-container"></div>
+
 
 
 
