@@ -67,6 +67,3 @@ function displayUsers(users, tableBody) {
     row.insertCell().textContent = user.email;
   });
 }
-
-// Charger les données une fois au chargement de la page
-document.addEventListener("DOMContentLoaded", fetchUsers);
